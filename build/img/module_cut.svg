@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1080" font-family="Manrope, sans-serif">
+<defs>
+ <linearGradient id="beam" x1="1" x2="0"><stop offset="0" stop-color="#E21A1A" stop-opacity=".45"/><stop offset="1" stop-color="#E21A1A" stop-opacity="0"/></linearGradient>
+ <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#D5D9DE"/><line x1="0" y1="0" x2="0" y2="8" stroke="#A9AFB7" stroke-width="2"/></pattern>
+</defs>
+<rect width="760" height="1080" fill="#F5F6F7"/>
+<text x="60" y="190" font-size="15" font-weight="800" letter-spacing="2.7" fill="#E21A1A">СХЕМА · МОДУЛЬ В РАЗРЕЗЕ</text>
+<text x="60" y="232" font-size="30" font-weight="700" fill="#121417" font-family="Tektur, sans-serif">МСД-ЖД-24</text>
+<!-- light beam -->
+<polygon points="128,550 0,360 0,740" fill="url(#beam)"/>
+<g stroke="#E21A1A" stroke-width="2" stroke-dasharray="6 8" opacity=".55"><line x1="120" y1="550" x2="0" y2="550"/><line x1="122" y1="520" x2="0" y2="440"/><line x1="122" y1="580" x2="0" y2="660"/></g>
+<!-- hood -->
+<polygon points="150,400 64,388 64,404 150,424" fill="#121417"/>
+<!-- housing cut walls -->
+<rect x="150" y="400" width="480" height="300" rx="28" fill="url(#hatch)" stroke="#121417" stroke-width="3"/>
+<rect x="166" y="416" width="448" height="268" rx="16" fill="#FFFFFF"/>
+<rect x="140" y="430" width="30" height="240" fill="#F5F6F7"/>
+<!-- lens -->
+<path d="M172 428 Q 96 550 172 672 Z" fill="#FDE3E3" stroke="#E21A1A" stroke-width="3"/>
+<g fill="none" stroke="#E21A1A" stroke-width="1.5" opacity=".6"><path d="M164 452 Q 118 550 164 648"/><path d="M168 476 Q 136 550 168 624"/><path d="M170 500 Q 152 550 170 600"/></g>
+<!-- LED board + heatsink -->
+<rect x="200" y="440" width="14" height="220" fill="#121417"/>
+<g fill="#FFE8E8" stroke="#E21A1A" stroke-width="2">
+ <rect x="186" y="452" width="14" height="16" rx="3"/><rect x="186" y="486" width="14" height="16" rx="3"/><rect x="186" y="520" width="14" height="16" rx="3"/><rect x="186" y="554" width="14" height="16" rx="3"/><rect x="186" y="588" width="14" height="16" rx="3"/><rect x="186" y="622" width="14" height="16" rx="3"/>
+</g>
+<rect x="214" y="446" width="10" height="208" fill="#8C929A"/>
+<g fill="#B5BAC0"><rect x="224" y="452" width="42" height="7"/><rect x="224" y="472" width="42" height="7"/><rect x="224" y="492" width="42" height="7"/><rect x="224" y="512" width="42" height="7"/><rect x="224" y="532" width="42" height="7"/><rect x="224" y="552" width="42" height="7"/><rect x="224" y="572" width="42" height="7"/><rect x="224" y="592" width="42" height="7"/><rect x="224" y="612" width="42" height="7"/><rect x="224" y="632" width="42" height="7"/></g>
+<!-- light sensor on top -->
+<path d="M196 400 a14 14 0 0 1 28 0 Z" fill="#E21A1A"/>
+<text x="232" y="380" font-size="16" font-weight="600" fill="#5E656E">датчик света</text>
+<path d="M210 416 V 430 Q 210 440 300 440 H 360 V 560" fill="none" stroke="#E21A1A" stroke-width="2" stroke-dasharray="4 5"/>
+<!-- driver board -->
+<rect x="296" y="610" width="180" height="12" rx="2" fill="#E21A1A"/>
+<rect x="318" y="572" width="44" height="38" rx="3" fill="#121417"/>
+<rect x="376" y="556" width="20" height="54" rx="6" fill="#8C929A"/><rect x="402" y="566" width="20" height="44" rx="6" fill="#8C929A"/>
+<circle cx="450" cy="590" r="18" fill="none" stroke="#121417" stroke-width="6"/>
+<!-- wires -->
+<path d="M296 616 H 266" stroke="#121417" stroke-width="4"/>
+<path d="M476 616 H 500" stroke="#121417" stroke-width="4"/>
+<path d="M560 600 H 618" stroke="#E21A1A" stroke-width="4"/><path d="M560 616 H 618" stroke="#121417" stroke-width="4"/>
+<!-- protection -->
+<rect x="500" y="568" width="60" height="80" rx="4" fill="#fff" stroke="#121417" stroke-width="3"/>
+<rect x="512" y="582" width="36" height="14" rx="7" fill="none" stroke="#121417" stroke-width="2.5"/><line x1="512" y1="589" x2="548" y2="589" stroke="#121417" stroke-width="2"/>
+<polygon points="518,612 542,612 530,630" fill="#121417"/><line x1="516" y1="632" x2="544" y2="632" stroke="#121417" stroke-width="3"/>
+<!-- cable gland + cable -->
+<rect x="614" y="582" width="34" height="50" rx="4" fill="#121417"/>
+<path d="M648 607 C 700 607 700 700 742 760" fill="none" stroke="#121417" stroke-width="12" stroke-linecap="round"/>
+<!-- callouts -->
+<g font-family="Tektur, sans-serif" font-size="22" font-weight="700" text-anchor="middle">
+ <line x1="96" y1="472" x2="128" y2="510" stroke="#121417" stroke-width="2"/><circle cx="84" cy="456" r="22" fill="#121417"/><text x="84" y="464" fill="#fff">4</text>
+ <line x1="380" y1="518" x2="350" y2="570" stroke="#121417" stroke-width="2"/><circle cx="392" cy="498" r="22" fill="#E21A1A"/><text x="392" y="506" fill="#fff">3</text>
+ <line x1="530" y1="530" x2="530" y2="566" stroke="#121417" stroke-width="2"/><circle cx="530" cy="508" r="22" fill="#fff" stroke="#121417" stroke-width="3"/><text x="530" y="516" fill="#121417">2</text>
+ <line x1="694" y1="540" x2="650" y2="586" stroke="#121417" stroke-width="2"/><circle cx="706" cy="520" r="22" fill="#fff" stroke="#121417" stroke-width="3"/><text x="706" y="528" fill="#121417">1</text>
+</g>
+<!-- dimension -->
+<g stroke="#8C929A" stroke-width="2"><line x1="150" y1="752" x2="630" y2="752"/><line x1="150" y1="740" x2="150" y2="764"/><line x1="630" y1="740" x2="630" y2="764"/></g>
+<rect x="352" y="740" width="76" height="24" fill="#F5F6F7"/><text x="390" y="759" font-size="18" font-weight="700" fill="#5E656E" text-anchor="middle">200 мм</text>
+<text x="60" y="860" font-size="20" font-weight="600" fill="#5E656E">Корпус IP67 · удары IK08 · без ртути</text>
+<text x="60" y="892" font-size="20" font-weight="600" fill="#5E656E">Ставится в старый корпус светофора</text>
+</svg>
