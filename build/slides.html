@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>ВагонТорг. Рекламная кампания</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--red:#E21A1A;--ink:#121417;--gray:#5E656E;--light:#8C929A;--line:#E2E4E7;--soft:#F5F6F7;--pink:#FDEEEE}
+*{box-sizing:border-box}
+html,body{margin:0;background:#ddd}
+.slide{width:1920px;height:1080px;position:relative;overflow:hidden;background:#fff;color:var(--ink);font-family:Manrope,sans-serif;display:none}
+body.all .slide{display:block;margin:0 auto 40px}
+.slide.on{display:block}
+.c{position:absolute}
+.logo{position:absolute;left:96px;top:60px;display:flex;align-items:center;gap:14px;font:800 30px Manrope;letter-spacing:-.02em;z-index:5}
+.logo svg{width:38px;height:45px}
+.foot{position:absolute;left:96px;bottom:52px;display:flex;align-items:center;gap:22px;font:600 16px Manrope;letter-spacing:.14em;text-transform:uppercase;color:var(--light);z-index:5}
+.foot .pg{font:800 18px Manrope;letter-spacing:.04em;color:var(--red)}
+.foot .cr{letter-spacing:.02em;text-transform:none;font-weight:500}
+.kick{font:800 18px Manrope;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:28px;display:flex;align-items:center;gap:14px}
+.kick::before{content:"";width:28px;height:4px;background:var(--red)}
+h1{font:800 84px/1.04 Manrope;letter-spacing:-.035em;margin:0}
+h1.xl{font-size:118px;line-height:.98}
+h1.s{font-size:68px}
+.red{color:var(--red)}
+.lead{font:500 30px/1.45 Manrope;color:var(--gray);margin:30px 0 0}
+.lead b,.t26 b,.t22 b{color:var(--ink);font-weight:700}
+.t26{font:500 26px/1.45 Manrope;color:var(--gray);margin:0}
+.t22{font:500 22px/1.45 Manrope;color:var(--gray);margin:0}
+.lab{font:800 15px Manrope;letter-spacing:.18em;text-transform:uppercase;color:var(--light)}
+.lab.red{color:var(--red)}
+.big{font:800 132px/0.9 Manrope;letter-spacing:-.05em}
+.big small{font-size:.38em;letter-spacing:-.01em;color:var(--red);margin-left:16px}
+.h3{font:800 30px/1.2 Manrope;letter-spacing:-.015em;margin:0}
+.ph{position:absolute;top:0;bottom:0;right:0;overflow:hidden;background:#ccc}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.cap{position:absolute;font:500 18px/1.4 Manrope;color:var(--light)}
+.rows>div{border-top:1px solid var(--line);padding:26px 0}
+.rows>div:last-child{border-bottom:1px solid var(--line)}
+.num{font:800 22px Manrope;color:var(--red);letter-spacing:.02em}
+table.t{border-collapse:collapse;width:100%;font:500 25px Manrope}
+table.t th{font:800 15px Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--light);text-align:left;padding:20px 24px;border-bottom:2px solid var(--ink)}
+table.t td{padding:24px 24px;border-bottom:1px solid var(--line);color:var(--gray);vertical-align:top}
+table.t td:first-child{color:var(--ink);font-weight:700}
+table.t .hl{background:var(--pink);color:var(--red)!important;font-weight:800}
+table.t th.hl{color:var(--red)}
+.dot{display:block;border-radius:50%}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="shield" viewBox="0 0 44 52">
+    <path d="M22 1 L42 8 V26 C42 39 32 47 22 51 C12 47 2 39 2 26 V8 Z" fill="#E21A1A"/>
+    <path d="M10.25 23.72 A12.5 12.5 0 0 1 33.75 23.72" fill="none" stroke="#fff" stroke-width="3.4"/>
+    <circle cx="22" cy="28" r="9" fill="#FFC629"/>
+  </symbol>
+</defs></svg>
+
+<!-- 01 Обложка -->
+<section class="slide" data-nofoot="1">
+  <div class="ph" style="width:820px"><img src="img/p_cover.jpg"></div>
+  <div class="c" style="left:96px;top:250px;width:930px">
+    <div class="kick">Рекламная кампания · Москва, 2027</div>
+    <h1 class="xl">Видно за 500&nbsp;метров.<br><span class="red">Даже в&nbsp;метель.</span></h1>
+    <p class="lead" style="width:760px">Светодиодные сигнальные фонари и модули для железнодорожных светофоров</p>
+  </div>
+  <div class="c" style="left:96px;bottom:64px;display:flex;gap:64px">
+    <div><div class="lab">Заказчик</div><div style="font:700 24px Manrope;margin-top:8px">ООО «ВагонТорг»</div></div>
+    <div><div class="lab">Рынок</div><div style="font:700 24px Manrope;margin-top:8px">Москва и ЦФО</div></div>
+    <div><div class="lab">Старт</div><div style="font:700 24px Manrope;margin-top:8px">март 2027</div></div>
+  </div>
+</section>
+
+<!-- 02 Кто мы -->
+<section class="slide">
+  <div class="c" style="left:1240px;top:0;bottom:0;width:680px;background:var(--soft)"></div>
+  <div class="c" style="left:96px;top:220px;width:1060px">
+    <div class="kick">О компании</div>
+    <h1>Делаем свет<br>для железной дороги</h1>
+    <p class="lead" style="width:960px">Производим сигнальные фонари и светодиодные модули для светофоров. Всё сертифицировано под российские нормы, на каждое изделие даём <b>3 года гарантии</b>.</p>
+  </div>
+  <div class="c rows" style="left:96px;top:720px;width:1040px">
+    <div style="display:flex;gap:36px;align-items:baseline"><span class="num">01</span><span class="h3" style="width:400px">Фонарь ФС-ЖД-01</span><span class="t22">переносной сигнал для мест работ и аварий</span></div>
+    <div style="display:flex;gap:36px;align-items:baseline"><span class="num">02</span><span class="h3" style="width:400px">Модуль МСД-ЖД-24</span><span class="t22">ставится в светофор вместо ламп</span></div>
+  </div>
+  <div class="c rows" style="left:1320px;top:260px;width:500px">
+    <div><div class="lab red">Полное наименование</div><div style="font:700 30px/1.3 Manrope;margin-top:10px">ООО «ВагонТорг»</div></div>
+    <div><div class="lab red">Адрес</div><div style="font:700 30px/1.3 Manrope;margin-top:10px">г. Москва, ул. Победа, д. 7</div></div>
+    <div><div class="lab red">Телефон</div><div style="font:700 30px/1.3 Manrope;margin-top:10px">+7 (929) 048-33-77</div></div>
+    <div><div class="lab red">Почта</div><div style="font:700 30px/1.3 Manrope;margin-top:10px">sales@vagon-torg.ru</div></div>
+  </div>
+</section>
+
+<!-- 03 Проблема -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="ph" style="width:780px"><img src="img/c9.jpg" style="object-position:50% 40%"></div>
+  <div class="c" style="left:96px;top:200px;width:960px">
+    <div class="kick">Проблема</div>
+    <h1 style="font-size:76px">Лампа в светофоре горит, <span class="red">пока не&nbsp;перегорит</span></h1>
+  </div>
+  <div class="c rows" style="left:96px;top:480px;width:960px">
+    <div style="display:flex;gap:36px"><span class="num" style="padding-top:4px">01</span><p class="t26">В светофорах до сих пор стоят <b>лампы накаливания</b>. Большая часть энергии уходит в тепло, а не в свет.</p></div>
+    <div style="display:flex;gap:36px"><span class="num" style="padding-top:4px">02</span><p class="t26">Перегоревшую лампу меняют руками. Обычно <b>в мороз</b> и обычно <b>ночью</b>.</p></div>
+    <div style="display:flex;gap:36px"><span class="num" style="padding-top:4px">03</span><p class="t26">В туман и метель тусклое пятно лампы теряется. Машинист видит сигнал <b>позже</b>, чем хотелось бы.</p></div>
+  </div>
+</section>
+
+<!-- 04 Почему Москва -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="ph" style="width:760px"><img src="img/c1.jpg" style="object-position:45% 50%"></div>
+  <div class="c" style="left:96px;top:200px;width:980px">
+    <div class="kick">География кампании</div>
+    <h1>Почему начинаем <span class="red">с&nbsp;Москвы</span></h1>
+  </div>
+  <div class="c" style="left:96px;top:470px;width:960px;display:grid;grid-template-columns:1fr 1fr;column-gap:64px;row-gap:46px">
+    <div style="border-top:2px solid var(--ink);padding-top:22px"><div class="big" style="font-size:84px">10</div><p class="t22" style="margin-top:14px">вокзалов, МЦД и сортировочные станции. Самый плотный ж/д узел страны</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:22px"><div class="big" style="font-size:84px">1 город</div><p class="t22" style="margin-top:14px">где принимают решения о закупках: управления, подрядчики, институты</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:22px"><div class="big" style="font-size:84px">сотни</div><p class="t22" style="margin-top:14px">заводов в Подмосковье со своими подъездными путями</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:22px"><div class="big" style="font-size:84px">2–3 ч</div><p class="t22" style="margin-top:14px">до любого города ЦФО, куда мы ездим на монтаж</p></div>
+  </div>
+</section>
+
+<!-- 05 Фонарь -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC0">
+  <div class="ph" style="width:700px"><img src="img/c13.jpg" style="object-position:30% 0%"></div>
+  <div class="cap" style="right:0;bottom:0;color:#fff;background:var(--ink);padding:12px 20px">Так выглядели сигнальные фонари раньше</div>
+  <div class="c" style="left:96px;top:200px;width:1040px">
+    <div class="kick">Продукт 01</div>
+    <h1>Фонарь ФС-ЖД-01</h1>
+    <p class="lead" style="width:980px">Переносной сигнал для мест работ и аварий. Поставили на путь, включили, ушли работать. Работает от аккумулятора, до <b>10 фонарей</b> соединяются в одну цепь.</p>
+    <div style="display:flex;gap:34px;margin-top:44px;font:700 22px Manrope">
+      <span style="display:flex;align-items:center;gap:10px"><i class="dot" style="width:22px;height:22px;background:#E21A1A"></i>Красный</span>
+      <span style="display:flex;align-items:center;gap:10px"><i class="dot" style="width:22px;height:22px;background:#F2B400"></i>Жёлтый</span>
+      <span style="display:flex;align-items:center;gap:10px"><i class="dot" style="width:22px;height:22px;background:#18A558"></i>Зелёный</span>
+      <span style="display:flex;align-items:center;gap:10px"><i class="dot" style="width:22px;height:22px;background:#fff;border:2px solid #C9CDD2"></i>Лунно-белый</span>
+    </div>
+  </div>
+  <div class="c" style="left:96px;top:740px;width:1030px;display:flex;border-top:2px solid var(--ink)">
+    <div style="flex:1;padding:24px 30px 0 0"><div class="big" style="font-size:60px">IP67</div><p class="t22" style="margin-top:10px">вода и пыль</p></div>
+    <div style="flex:1.5;padding:24px 30px 0;border-left:1px solid var(--line)"><div class="big" style="font-size:60px">−40…+55°</div><p class="t22" style="margin-top:10px">рабочая температура</p></div>
+    <div style="flex:1.3;padding:24px 0 0 30px;border-left:1px solid var(--line)"><div class="big" style="font-size:60px">1,2–1,8 кг</div><p class="t22" style="margin-top:10px">вместе с аккумулятором</p></div>
+  </div>
+</section>
+
+<!-- 06 Модуль -->
+<section class="slide">
+  <div class="ph" style="width:640px"><img src="img/p_module.jpg"></div>
+  <div class="c" style="left:96px;top:200px;width:1100px">
+    <div class="kick">Продукт 02</div>
+    <h1>Модуль МСД-ЖД-24</h1>
+    <p class="lead" style="width:1040px">Ставится в старый светофор вместо лампы. Корпус, кронштейны и кабели остаются прежними.</p>
+  </div>
+  <div class="c" style="left:96px;top:560px;width:1080px">
+    <div style="height:3px;background:var(--red);margin:0 40px 0 24px"></div>
+    <div style="display:flex;justify-content:space-between;margin-top:-25px">
+      <div style="width:330px"><div style="width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:800 22px Manrope">1</div><div class="h3" style="font-size:26px;margin-top:18px">Сняли ламповый комплект</div></div>
+      <div style="width:330px"><div style="width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:800 22px Manrope">2</div><div class="h3" style="font-size:26px;margin-top:18px">Вставили модуль в тот же корпус</div></div>
+      <div style="width:290px"><div style="width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 22px Manrope">3</div><div class="h3" style="font-size:26px;margin-top:18px">Подключили 24 В. Готово</div></div>
+    </div>
+    <div style="font:800 36px Manrope;margin-top:44px;letter-spacing:-.02em"><span class="red">15 минут</span> на один светофор</div>
+  </div>
+  <div class="c" style="left:96px;top:860px;width:1080px;display:flex;border-top:1px solid var(--line);padding-top:22px;font:800 26px Manrope">
+    <div style="flex:1">24 В<div class="lab" style="margin-top:6px">питание</div></div>
+    <div style="flex:1">12–24 Вт<div class="lab" style="margin-top:6px">мощность</div></div>
+    <div style="flex:1">0,6–0,9 кг<div class="lab" style="margin-top:6px">масса</div></div>
+    <div style="flex:1.2">200×150×80 мм<div class="lab" style="margin-top:6px">габариты</div></div>
+  </div>
+</section>
+
+<!-- 07 Четыре цифры -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="c" style="left:0;right:0;top:0;height:400px;overflow:hidden"><img src="img/c4.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 60%"></div>
+  <div class="c" style="left:96px;top:460px;width:1700px">
+    <h1 class="s">Четыре цифры, ради которых <span class="red">меняют лампы</span></h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:640px;display:flex">
+    <div style="flex:1;padding-right:30px"><div class="big">500<small>м</small></div><p class="t22" style="margin-top:20px">видимость сигнала в туман и снег</p></div>
+    <div style="flex:1;padding:0 30px;border-left:1px solid var(--line)"><div class="big">−40<small>°C</small></div><p class="t22" style="margin-top:20px">работает без потери яркости</p></div>
+    <div style="flex:1.6;padding:0 30px;border-left:1px solid var(--line)"><div class="big" style="white-space:nowrap">100 000<small>ч</small></div><p class="t22" style="margin-top:20px">ресурс модуля, это около 11 лет</p></div>
+    <div style="flex:1;padding-left:30px;border-left:1px solid var(--line)"><div class="big">−70<small>%</small></div><p class="t22" style="margin-top:20px">расход энергии по сравнению с лампой</p></div>
+  </div>
+</section>
+
+<!-- 08 Где работает -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="ph" style="width:620px"><img src="img/c3.jpg" style="object-position:50% 60%"></div>
+  <div class="c" style="left:96px;top:200px;width:1100px">
+    <div class="kick">Область применения</div>
+    <h1>Где это работает</h1>
+  </div>
+  <div class="c rows" style="left:96px;top:450px;width:1100px">
+    <div style="display:flex;gap:40px"><div style="width:330px"><div class="lab">Каждый день</div><div class="h3" style="margin-top:10px">Обычная работа на путях</div></div><p class="t26" style="flex:1">Ограждение мест работ, временные сигналы, замена ламп в светофорах</p></div>
+    <div style="display:flex;gap:40px"><div style="width:330px"><div class="lab red">Сильнее всех</div><div class="h3" style="margin-top:10px">Там, где другим тяжело</div></div><p class="t26" style="flex:1">В туман и метель сигнал видно <b>до 500 м</b>. Авария ночью без питания: фонарь работает <b>от аккумулятора</b></p></div>
+    <div style="display:flex;gap:40px"><div style="width:330px"><div class="lab">Следующий шаг</div><div class="h3" style="margin-top:10px">К чему уже готовы</div></div><p class="t26" style="flex:1">Подключение к телемеханике, удалённое управление, ведомственные и заводские пути</p></div>
+  </div>
+</section>
+
+<!-- 09 Как устроен -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="ph" style="width:600px"><img src="img/c8.jpg" style="object-position:50% 30%"></div>
+  <div class="c" style="left:96px;top:200px;width:1100px">
+    <div class="kick">Физический принцип</div>
+    <h1>Как устроен модуль</h1>
+  </div>
+  <div class="c" style="left:96px;top:440px;width:1120px">
+    <div style="position:absolute;left:23px;top:30px;bottom:60px;width:3px;background:var(--line)"></div>
+    <div style="display:flex;flex-direction:column;gap:30px;position:relative">
+      <div style="display:flex;gap:34px"><i class="dot" style="flex:0 0 48px;height:48px;border:3px solid var(--ink);background:#fff"></i><div><div class="h3" style="font-size:28px">Питание 24 В</div><p class="t22">от сети светофора, как у старой лампы</p></div></div>
+      <div style="display:flex;gap:34px"><i class="dot" style="flex:0 0 48px;height:48px;border:3px solid var(--ink);background:#fff"></i><div><div class="h3" style="font-size:28px">Защита</div><p class="t22">от скачков напряжения и обратной полярности</p></div></div>
+      <div style="display:flex;gap:34px"><i class="dot" style="flex:0 0 48px;height:48px;background:var(--red)"></i><div><div class="h3" style="font-size:28px">Драйвер стабилизации тока <span class="red">и датчик света</span></div><p class="t22">держит яркость ровной в мороз и при просадке сети, днём светит ярче, ночью мягче</p></div></div>
+      <div style="display:flex;gap:34px"><i class="dot" style="flex:0 0 48px;height:48px;background:var(--ink)"></i><div><div class="h3" style="font-size:28px">Светодиоды высокой яркости</div><p class="t22">800–1200 лм, угол 120–140°, корпус выдерживает удары по классу IK08</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 Только у нас -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Уникальные свойства</div>
+    <h1>Что есть <span class="red">только у нас</span></h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:450px;display:grid;grid-template-columns:repeat(3,1fr);column-gap:70px;row-gap:60px">
+    <div style="border-top:2px solid var(--ink);padding-top:24px"><div class="num">01</div><div class="h3" style="margin:14px 0 12px">Сама подстраивает яркость</div><p class="t26">Ночью светит мягче, днём ярче. Без настройки и без диспетчера.</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:24px"><div class="num">02</div><div class="h3" style="margin:14px 0 12px">−40 °C без потери света</div><p class="t26">Специальные драйверы не дают яркости проседать на морозе.</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:24px"><div class="num">03</div><div class="h3" style="margin:14px 0 12px">Не сгорит от скачка в сети</div><p class="t26">Встроенная защита от перепадов напряжения и обратной полярности.</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:24px"><div class="num">04</div><div class="h3" style="margin:14px 0 12px">QR-код на каждом корпусе</div><p class="t26">Навёл телефон и видишь паспорт изделия. Заодно ясно, что это не подделка.</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:24px"><div class="num">05</div><div class="h3" style="margin:14px 0 12px">До 10 фонарей в одной цепи</div><p class="t26">Длинный участок ограждается одной линией, яркость не падает.</p></div>
+    <div style="border-top:2px solid var(--red);padding-top:24px"><div class="num">Итого</div><div class="h3" style="margin:14px 0 12px">Сигнал, о котором не надо думать</div><p class="t26">Поставили один раз, следующий осмотр через 5–7 лет.</p></div>
+  </div>
+</section>
+
+<!-- 11 Характеристики -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Технико-экономические свойства</div>
+    <h1 class="s">Характеристики</h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:390px">
+    <table class="t">
+      <tr><th style="width:32%">Параметр</th><th style="width:30%">Фонарь ФС-ЖД-01</th><th>Модуль МСД-ЖД-24</th></tr>
+      <tr><td>Световой поток и мощность</td><td colspan="2">800–1200 лм при 12–24 Вт</td></tr>
+      <tr><td>Масса и габариты</td><td>1,2–1,8 кг</td><td>0,6–0,9 кг · 200×150×80 мм</td></tr>
+      <tr><td>Защита</td><td colspan="2">IP67 от воды и пыли · IK08 от ударов</td></tr>
+      <tr><td>Ресурс и обслуживание</td><td colspan="2">100 000 часов, около 11 лет · осмотр раз в 5–7 лет</td></tr>
+      <tr><td>Экология</td><td colspan="2">без ртути, утилизация как обычное электрооборудование</td></tr>
+      <tr><td>Нормы и гарантия</td><td colspan="2" style="color:var(--red);font-weight:800">ТР ТС, ГОСТ · гарантия 3 года</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 12 Сравнение -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Аналоги</div>
+    <h1 class="s">С кем нас сравнивают</h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:390px">
+    <table class="t">
+      <tr><th style="width:22%">Параметр</th><th class="hl" style="width:21%">ВагонТорг</th><th>Российские аналоги</th><th>Siemens, Thales</th><th>Китайские фонари</th></tr>
+      <tr><td>Рабочая температура</td><td class="hl">до −40 °C</td><td>обычно до −25 °C</td><td>до −40 °C</td><td>без адаптации к морозу</td></tr>
+      <tr><td>ТР ТС и ГОСТ</td><td class="hl">есть</td><td>есть</td><td>нужны доп. испытания</td><td>обычно нет</td></tr>
+      <tr><td>Установка модуля</td><td class="hl">15 минут в старый корпус</td><td>от 1 часа</td><td>под свой корпус</td><td>как повезёт</td></tr>
+      <tr><td>Техподдержка в ЦФО</td><td class="hl">выезд на место</td><td>по телефону</td><td>через дилера</td><td>нет</td></tr>
+      <tr><td>Цена модуля</td><td class="hl">22–26 тыс. ₽</td><td>сопоставимо</td><td>заметно дороже</td><td>дешевле</td></tr>
+    </table>
+  </div>
+  <div class="c" style="left:96px;top:950px;font:800 30px Manrope;letter-spacing:-.01em">Китайский фонарь дешевле. <span class="red">Пока не наступит первая зима.</span></div>
+</section>
+
+<!-- 13 Минусы -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY-SA 4.0">
+  <div class="ph" style="width:640px"><img src="img/c10.jpg" style="object-position:45% 50%"></div>
+  <div class="c" style="left:96px;top:200px;width:1100px">
+    <div class="kick">Недостатки</div>
+    <h1>Честно о минусах</h1>
+  </div>
+  <div class="c rows" style="left:96px;top:440px;width:1080px">
+    <div><div class="h3"><span class="red">−</span>&nbsp; Дороже китайских фонарей</div><p class="t26" style="margin-top:10px">Зато дешевле европейских и не ломается в первую же зиму. Дешёвый фонарь в итоге выходит дороже.</p></div>
+    <div><div class="h3"><span class="red">−</span>&nbsp; Пока только базовые цвета</div><p class="t26" style="margin-top:10px">Красный, жёлтый, зелёный и лунно-белый. Для сигнализации на путях этого хватает.</p></div>
+    <div><div class="h3"><span class="red">−</span>&nbsp; Очень старые корпуса надо проверять</div><p class="t26" style="margin-top:10px">Случается редко. Присылаете фото светофора, мы говорим, подойдёт ли модуль.</p></div>
+  </div>
+</section>
+
+<!-- 14 Экономика -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Эффект для заказчика</div>
+    <h1>Сколько экономит <span class="red">одна замена</span></h1>
+  </div>
+  <div class="c" style="left:96px;top:450px;width:1020px">
+    <div class="lab" style="margin-bottom:26px">Расход электроэнергии на один светофор</div>
+    <div style="display:flex;align-items:center;gap:24px;margin-bottom:20px"><div style="width:200px;font:700 24px Manrope">Лампа</div><div style="width:680px;height:56px;background:#C9CDD2"></div><div style="font:800 26px Manrope">100%</div></div>
+    <div style="display:flex;align-items:center;gap:24px"><div style="width:200px;font:700 24px Manrope">LED-модуль</div><div style="width:204px;height:56px;background:var(--red)"></div><div style="font:800 26px Manrope" class="red">30%</div></div>
+    <div class="rows" style="margin-top:60px;width:980px">
+      <div style="display:flex;gap:40px"><div class="lab" style="width:200px;padding-top:6px">Лампа</div><p class="t22">перегорает, её меняют вручную, каждый раз выезд бригады</p></div>
+      <div style="display:flex;gap:40px"><div class="lab red" style="width:200px;padding-top:6px">LED-модуль</div><p class="t22">осмотр раз в 5–7 лет, меньше простоев и штрафов, учёт по QR-коду</p></div>
+    </div>
+  </div>
+  <div class="c" style="left:1230px;top:440px;width:600px;border-left:1px solid var(--line);padding-left:70px">
+    <div class="big">1–2<small>года</small></div><p class="t22" style="margin-top:16px">и замена окупилась на экономии электроэнергии</p>
+    <div style="height:1px;background:var(--line);margin:48px 0"></div>
+    <div class="big">11<small>лет</small></div><p class="t22" style="margin-top:16px">работает модуль без замены лампы</p>
+  </div>
+</section>
+
+<!-- 15 Цены -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Стоимость</div>
+    <h1>Сколько стоит</h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:420px;display:flex">
+    <div style="flex:1;padding-right:70px">
+      <div class="lab">Фонарь ФС-ЖД-01</div>
+      <div class="big" style="font-size:120px;margin-top:20px">18 000<small>₽</small></div>
+      <p class="t26" style="margin-top:20px">в розницу · оптом <b>от 15 000 ₽</b> при заказе от 10 шт.</p>
+    </div>
+    <div style="flex:1;padding-left:70px;border-left:1px solid var(--line)">
+      <div class="lab">Модуль МСД-ЖД-24</div>
+      <div class="big" style="font-size:120px;margin-top:20px">26 000<small>₽</small></div>
+      <p class="t26" style="margin-top:20px">в розницу · оптом <b>от 22 000 ₽</b> при заказе от 10 шт.</p>
+    </div>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:770px">
+    <div class="lab" style="margin-bottom:30px">Чем больше партия, тем ниже цена</div>
+    <div style="height:3px;background:var(--ink)"></div>
+    <div style="display:flex;justify-content:space-between;margin-top:-12px">
+      <div><i class="dot" style="width:22px;height:22px;background:var(--ink)"></i><div style="font:800 26px Manrope;margin-top:16px">от 10 шт.</div><p class="t22">оптовая цена</p></div>
+      <div><i class="dot" style="width:22px;height:22px;background:var(--red)"></i><div style="font:800 26px Manrope;margin-top:16px">от 50 шт. <span class="red">−5%</span></div><p class="t22">к оптовой цене</p></div>
+      <div><i class="dot" style="width:22px;height:22px;background:var(--red)"></i><div style="font:800 26px Manrope;margin-top:16px">от 100 шт. <span class="red">−10%</span></div><p class="t22">к оптовой цене</p></div>
+      <div style="text-align:right"><i class="dot" style="width:22px;height:22px;background:#fff;border:3px solid var(--ink);margin-left:auto"></i><div style="font:800 26px Manrope;margin-top:16px">Постоянным клиентам</div><p class="t22">отсрочка 30 дней · рассрочка 3 месяца</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 Кейс -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY 2.0">
+  <div class="ph" style="width:700px"><img src="img/c6.jpg" style="object-position:50% 40%"></div>
+  <div class="c" style="left:96px;top:200px;width:1050px">
+    <div class="kick">Кейс</div>
+    <h1>Станция поменяла <span class="red">50&nbsp;модулей</span></h1>
+  </div>
+  <div class="c" style="left:96px;top:500px;width:1030px;display:flex">
+    <div style="flex:1.2;padding-right:40px"><div class="big" style="font-size:150px">−68<small>%</small></div><p class="t22" style="margin-top:18px">расход электроэнергии</p></div>
+    <div style="flex:1;padding-left:40px;border-left:1px solid var(--line)"><div class="big" style="font-size:150px">0</div><p class="t22" style="margin-top:18px">отказов после замены</p></div>
+  </div>
+  <div class="c" style="left:96px;top:790px;width:1030px;border-left:4px solid var(--red);padding-left:34px">
+    <div style="font:700 32px/1.4 Manrope;letter-spacing:-.01em">«Стабильно работают в морозы, монтаж простой, техподдержка отвечает быстро»</div>
+    <div class="lab" style="margin-top:16px">Отзыв заказчика · региональное подразделение РЖД</div>
+  </div>
+</section>
+
+<!-- 17 Кому продаём -->
+<section class="slide" data-credit="Фото: Wikimedia Commons, CC BY 2.0">
+  <div class="ph" style="width:640px"><img src="img/c20.jpg" style="object-position:35% 50%"></div>
+  <div class="c" style="left:96px;top:200px;width:1100px">
+    <div class="kick">Потенциальные потребители</div>
+    <h1>Кому продаём</h1>
+  </div>
+  <div class="c rows" style="left:96px;top:430px;width:640px">
+    <div style="padding:18px 0"><div class="h3" style="font-size:25px">ШЧ и ПЧ РЖД</div><p class="t22">службы сигнализации и пути</p></div>
+    <div style="padding:18px 0"><div class="h3" style="font-size:25px">Заводы с подъездными путями</div></div>
+    <div style="padding:18px 0"><div class="h3" style="font-size:25px">Подрядчики по обслуживанию</div></div>
+    <div style="padding:18px 0"><div class="h3" style="font-size:25px">Ведомственные дороги</div></div>
+    <div style="padding:18px 0"><div class="h3" style="font-size:25px">Проектные институты</div></div>
+  </div>
+  <div class="c" style="left:830px;top:430px;width:400px">
+    <div class="lab">Наш опрос 30 служб пути</div>
+    <div class="big red" style="font-size:150px;margin-top:20px">65%</div>
+    <p class="t22" style="margin-top:20px">готовы покупать отечественные LED-модули, если есть <b>гарантия и техподдержка</b></p>
+    <div style="height:1px;background:var(--line);margin:34px 0 24px"></div>
+    <div class="lab">Анализ тендеров</div>
+    <p class="t22" style="margin-top:10px">спрос на сертифицированные сигнальные устройства растёт</p>
+  </div>
+</section>
+
+<!-- 18 Патенты -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Патенты и открытая информация</div>
+    <h1>Что защищено и что показываем</h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:450px;display:flex">
+    <div style="flex:1.2;padding-right:60px"><div style="height:6px;background:var(--ink);width:60px;margin-bottom:24px"></div><div class="h3">Защищено</div>
+      <div class="rows" style="margin-top:20px"><div style="padding:18px 0"><p class="t26">Патент на схему драйвера с адаптивной яркостью</p></div><div style="padding:18px 0"><p class="t26">Товарный знак «ВагонТорг»</p></div><div style="padding:18px 0"><p class="t26">ТУ и сертификаты ТР ТС, ГОСТ</p></div><div style="padding:18px 0"><p class="t26">Логотип, цвета и шаблоны документов</p></div></div></div>
+    <div style="flex:1;padding:0 60px;border-left:1px solid var(--line)"><div style="height:6px;background:var(--red);width:60px;margin-bottom:24px"></div><div class="h3">Показываем в рекламе</div>
+      <div class="rows" style="margin-top:20px"><div style="padding:18px 0"><p class="t26">Технические характеристики</p></div><div style="padding:18px 0"><p class="t26">Фото и видео изделий</p></div><div style="padding:18px 0"><p class="t26">Сертификаты</p></div><div style="padding:18px 0"><p class="t26">QR-маркировку</p></div></div></div>
+    <div style="flex:1;padding-left:60px;border-left:1px solid var(--line)"><div style="height:6px;background:#C9CDD2;width:60px;margin-bottom:24px"></div><div class="h3">Оставляем внутри</div>
+      <div class="rows" style="margin-top:20px"><div style="padding:18px 0"><p class="t26">Отчёты по качеству</p></div><div style="padding:18px 0"><p class="t26">Закупочные цены</p></div><div style="padding:18px 0"><p class="t26">Условия отдельных клиентов</p></div></div></div>
+  </div>
+</section>
+
+<!-- 19 Цели и медиаплан -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Цели и каналы</div>
+    <h1 class="s">Что хотим получить и где будем рекламироваться</h1>
+  </div>
+  <div class="c" style="left:96px;top:420px;width:560px">
+    <div style="border-top:2px solid var(--ink);padding-top:18px"><div class="big" style="font-size:76px">+30<small>%</small></div><p class="t22" style="margin-top:10px">продаж в ЦФО за 6 месяцев. Сейчас 200 фонарей и 150 модулей в месяц, мощности позволяют 500 и 400</p></div>
+    <div style="border-top:2px solid var(--ink);padding-top:18px;margin-top:34px"><div class="big" style="font-size:76px">3+</div><p class="t22" style="margin-top:10px">договора в Москве и области за первые 3 месяца</p></div>
+  </div>
+  <div class="c" style="left:760px;right:96px;top:420px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px" id="channels"></div>
+</section>
+
+<!-- 20 Бюджет -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Рекламный бюджет</div>
+    <h1>Три варианта бюджета</h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:420px;height:430px;display:flex;align-items:flex-end;gap:70px;border-bottom:2px solid var(--ink)">
+    <div style="flex:1"><div style="font:800 40px Manrope;letter-spacing:-.03em;margin-bottom:16px">300–500 тыс. ₽</div><div style="height:70px;background:#C9CDD2"></div></div>
+    <div style="flex:1"><div style="font:800 40px Manrope;letter-spacing:-.03em;margin-bottom:16px" class="red">1–1,5 млн ₽</div><div style="height:200px;background:var(--red)"></div></div>
+    <div style="flex:1"><div style="font:800 40px Manrope;letter-spacing:-.03em;margin-bottom:16px">от 3 млн ₽</div><div style="height:330px;background:var(--ink)"></div></div>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:875px;display:flex;gap:70px">
+    <div style="flex:1"><div class="lab">Минимум</div><p class="t22" style="margin-top:8px">Яндекс Директ, соцсети, лендинг, буклеты</p></div>
+    <div style="flex:1"><div class="lab red">Предлагаем</div><p class="t22" style="margin-top:8px">всё из минимума, плюс щиты у станций и депо в Москве и стенд на выставке</p></div>
+    <div style="flex:1"><div class="lab">Максимум</div><p class="t22" style="margin-top:8px">B2B-видеоролик, крупная digital-кампания, спонсорство мероприятий</p></div>
+  </div>
+</section>
+
+<!-- 21 Сроки -->
+<section class="slide">
+  <div class="c" style="left:96px;top:200px;width:1700px">
+    <div class="kick">Сроки кампании</div>
+    <h1>Стартуем за месяц <span class="red">до сезона ремонтов</span></h1>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:440px;height:480px" id="gantt"></div>
+</section>
+
+<!-- 22 Как будет выглядеть -->
+<section class="slide">
+  <div class="c" style="left:96px;top:180px;width:1700px">
+    <div class="kick">Рекламные носители</div>
+    <h1 class="s">Как это будет выглядеть</h1>
+  </div>
+  <div class="c" style="left:96px;top:370px;width:1010px">
+    <div style="height:470px;display:flex;border:1px solid var(--line)">
+      <div style="flex:1.15;background:#fff;padding:40px;position:relative">
+        <div style="display:flex;align-items:center;gap:10px;font:800 22px Manrope"><svg width="26" height="31"><use href="#shield"/></svg>ВагонТорг</div>
+        <div style="font:800 56px/1.02 Manrope;letter-spacing:-.04em;margin-top:44px">Сигнал видно, когда не видно <span class="red">ничего</span></div>
+        <div style="position:absolute;left:40px;bottom:34px;font:700 18px Manrope;color:var(--gray)">LED-модули для светофоров · vagon-torg.ru</div>
+      </div>
+      <div style="flex:1;overflow:hidden"><img src="img/p_cover.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+    </div>
+    <div class="cap" style="position:static;margin-top:14px">Щит 6×3 м у станций и депо</div>
+  </div>
+  <div class="c" style="left:1160px;top:370px;width:320px">
+    <div style="height:470px;background:var(--red);color:#fff;padding:34px 30px;position:relative">
+      <div style="font:800 20px Manrope">ВагонТорг</div>
+      <div style="font:800 42px/1.06 Manrope;letter-spacing:-.04em;margin-top:34px">Поставил за&nbsp;15&nbsp;минут.</div>
+      <div style="font:800 42px/1.06 Manrope;letter-spacing:-.04em;margin-top:14px;color:#FFD9D9">Забыл на&nbsp;11&nbsp;лет.</div>
+      <div style="position:absolute;left:30px;right:30px;bottom:30px;font:600 17px/1.4 Manrope">Модуль МСД-ЖД-24 встаёт в старый корпус светофора</div>
+    </div>
+    <div class="cap" style="position:static;margin-top:14px">Буклет для служб пути</div>
+  </div>
+  <div class="c" style="left:1530px;top:370px;width:294px">
+    <div style="height:470px;border:1px solid var(--line);border-radius:28px;padding:18px;background:#fff">
+      <div style="display:flex;align-items:center;gap:8px;font:800 15px Manrope"><svg width="20" height="24"><use href="#shield"/></svg>ВагонТорг<span style="color:var(--light);font-weight:500">· реклама</span></div>
+      <div style="height:170px;margin-top:14px;overflow:hidden"><img src="img/p_module.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+      <div style="font:800 19px/1.3 Manrope;margin-top:14px">Экономьте энергию и деньги с нашими LED-модулями</div>
+      <div style="font:500 15px/1.45 Manrope;color:var(--gray);margin-top:8px">Минус 70% к счёту за свет и ни одной замены лампы следующие 11 лет.</div>
+      <div style="margin-top:14px;background:var(--red);color:#fff;padding:11px;text-align:center;font:800 15px Manrope">Рассчитать экономию</div>
+    </div>
+    <div class="cap" style="position:static;margin-top:14px">Пост в Telegram и ВК</div>
+  </div>
+  <div class="c" style="left:96px;right:96px;top:915px;display:flex;gap:40px;font:700 22px Manrope;align-items:baseline">
+    <span class="lab red">Слоганы</span>
+    <span>«Надёжные сигналы даже в тумане и снегу»</span>
+    <span>«Простая установка, без лишних работ»</span>
+    <span>«Дольше служит, реже обслуживать»</span>
+  </div>
+</section>
+
+<!-- 23 Финал -->
+<section class="slide" data-nofoot="1">
+  <div class="ph" style="width:760px"><img src="img/p_cover.jpg" style="object-position:50% 70%"></div>
+  <div class="c" style="left:96px;top:230px;width:1000px">
+    <div class="kick">Предложение</div>
+    <h1 class="xl" style="font-size:104px">Возьмите модуль <span class="red">на&nbsp;30&nbsp;дней бесплатно</span></h1>
+    <p class="lead" style="width:900px">Поставим в ваш светофор. Посмотрите на него в туман и в мороз. Не понравится, заберём сами.</p>
+  </div>
+  <div class="c" style="left:96px;bottom:70px;display:flex;gap:70px">
+    <div><div class="lab">Телефон</div><div style="font:800 34px Manrope;margin-top:8px;letter-spacing:-.02em">+7 (929) 048-33-77</div></div>
+    <div><div class="lab">Почта</div><div style="font:800 34px Manrope;margin-top:8px;letter-spacing:-.02em">sales@vagon-torg.ru</div></div>
+  </div>
+</section>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];const total=slides.length;const pad=n=>String(n).padStart(2,'0');
+slides.forEach((s,i)=>{
+  s.insertAdjacentHTML('beforeend',`<div class="logo"><svg viewBox="0 0 44 52"><use href="#shield"/></svg>ВагонТорг</div>`);
+  if(!s.dataset.nofoot) s.insertAdjacentHTML('beforeend',`<div class="foot"><span class="pg">${pad(i+1)} / ${pad(total)}</span><span>ВагонТорг · Рекламная кампания · Москва, 2027</span>${s.dataset.credit?`<span class="cr">${s.dataset.credit}</span>`:''}</div>`);
+});
+document.getElementById('channels').innerHTML=[
+ ['Яндекс Директ','поиск по Москве и области: «LED-модуль для светофора»'],
+ ['Telegram и ВК','отраслевые каналы и группы железнодорожников'],
+ ['Прямая рассылка','письма и звонки в ШЧ и ПЧ Московской дороги'],
+ ['Буклеты','раздаём в депо, дистанциях и на совещаниях'],
+ ['Щиты у станций','наружная реклама рядом с депо и ж/д узлами'],
+ ['Выставка','стенд на отраслевой выставке, например PRO//Движение.Экспо'],
+].map(([h,p])=>`<div style="border-top:1px solid var(--line);padding:20px 0"><div class="h3" style="font-size:25px">${h}</div><p class="t22" style="margin-top:6px;font-size:21px">${p}</p></div>`).join('')+
+`<div style="grid-column:span 2;border-top:2px solid var(--red);padding:20px 0"><div class="h3 red" style="font-size:25px">Ночной демо-показ</div><p class="t22" style="margin-top:6px;font-size:21px">Ставим рядом лампу и наш модуль в туман и зовём заказчиков посмотреть своими глазами</p></div>`;
+(()=>{const m=['Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя'];const W=1728,cw=W/m.length;let o='';
+m.forEach((x,i)=>{o+=`<div style="position:absolute;left:${i*cw}px;top:0;width:${cw}px;height:480px;border-left:1px solid var(--line)"><div class="lab" style="padding-left:14px">${x}</div></div>`});
+const bar=(a,b,y,bg,fg,t,s)=>`<div style="position:absolute;left:${a*cw+6}px;width:${(b-a)*cw-12}px;top:${y}px;height:84px;background:${bg};color:${fg};padding:14px 20px"><div style="font:800 24px Manrope">${t}</div><div style="font:500 18px Manrope;opacity:.85;margin-top:4px">${s}</div></div>`;
+o+=`<div style="position:absolute;left:6px;width:${cw-12}px;top:60px;height:84px;background:#E9EBEE;padding:14px 16px"><div style="font:800 20px Manrope">Подготовка</div><div style="font:500 16px Manrope;color:#5E656E;margin-top:4px">макеты</div></div>`;
+o+=bar(1,7,170,'#E21A1A','#fff','Основная кампания, 6 месяцев','старт в марте, за месяц до сезона ремонтов');
+o+=bar(2,5,280,'#121417','#fff','Пик: апрель–июнь','максимум показов и встреч');
+o+=bar(7,10,280,'#121417','#fff','Второй пик: сентябрь–ноябрь','продление кампании');
+o+=`<div style="position:absolute;left:${1*cw+6}px;top:400px;font:700 22px Manrope;color:var(--gray)">Длительность 3–6 месяцев с возможностью продления</div>`;
+document.getElementById('gantt').innerHTML=o;})();
+const p=new URLSearchParams(location.search).get('s');
+if(p){slides[+p-1].classList.add('on');}else{document.body.classList.add('all');}
+</script>
+</body>
+</html>
